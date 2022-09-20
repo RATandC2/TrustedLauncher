@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug - CUI|ARM">
+      <Configuration>Debug - CUI</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug - CUI|ARM64">
+      <Configuration>Debug - CUI</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug - CUI|Win32">
+      <Configuration>Debug - CUI</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug - CUI|x64">
+      <Configuration>Debug - CUI</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug - GUI|ARM">
+      <Configuration>Debug - GUI</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug - GUI|ARM64">
+      <Configuration>Debug - GUI</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug - GUI|Win32">
+      <Configuration>Debug - GUI</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug - GUI|x64">
+      <Configuration>Debug - GUI</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release - CUI|ARM">
+      <Configuration>Release - CUI</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release - CUI|ARM64">
+      <Configuration>Release - CUI</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release - CUI|Win32">
+      <Configuration>Release - CUI</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release - CUI|x64">
+      <Configuration>Release - CUI</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release - GUI|ARM">
+      <Configuration>Release - GUI</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release - GUI|ARM64">
+      <Configuration>Release - GUI</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release - GUI|Win32">
+      <Configuration>Release - GUI</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release - GUI|x64">
+      <Configuration>Release - GUI</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DBC9A9EE-78AE-4260-80E8-67D4D04A92C8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>NSudo</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <IntDirSharingDetected>None</IntDirSharingDetected>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)'=='ARM64'" Label="Configuration">
+    <WindowsSDKDesktopARM64Support>true</WindowsSDKDesktopARM64Support>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)'=='ARM'" Label="Configuration">
+    <WindowsSDKDesktopARMSupport>true</WindowsSDKDesktopARMSupport>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug - GUI|ARM'">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug - GUI|ARM64'">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug - GUI|Win32'">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug - GUI|x64'">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release - CUI|Win32'" Label="PropertySheets">
+    <Import Project="..\MSBuild\AllTargets.Common.props" />
+    <Import Project="..\MSBuild\AllTargets.Release.props" />
+    <Import Project="..\MSBuild\NSudoC.props" />
+    <Import Project="..\MSBuild\NSudoLib.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release - GUI|Win32'" Label="PropertySheets">
+    <Import Project="..\MSBuild\AllTargets.Common.props" />
+    <Import Project="..\MSBuild\AllTargets.Release.props" />
+    <Import Project="..\MSBuild\NSudoG.props" />
+    <Import Project="..\MSBuild\NSudoLib.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release - CUI|x64'" Label="PropertySheets">
+    <Import Project="..\MSBuild\AllTargets.Common.props" />
+    <Import Project="..\MSBuild\AllTargets.Release.props" />
+    <Import Project="..\MSBuild\NSudoC.props" />
+    <Import Project="..\MSBuild\NSudoLib.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release - GUI|x64'" Label="PropertySheets">
+    <Import Project="..\MSBuild\AllTargets.Common.props" />
+    <Import Project="..\MSBuild\AllTargets.Release.props" />
+    <Import Project="..\MSBuild\NSudoG.props" />
+    <Import Project="..\MSBuild\NSudoLib.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release - CUI|ARM64'" Label="PropertySheets">
+    <Import Project="..\MSBuild\AllTargets.Common.props" />
+    <Import Project="..\MSBuild\AllTargets.Release.props" />
+    <Import Project="..\MSBuild\NSudoC.props" />
+    <Import Project="..\MSBuild\NSudoLib.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release - GUI|ARM64'" Label="PropertySheets">
+    <Import Project="..\MSBuild\AllTargets.Common.props" />
+    <Import Project="..\MSBuild\AllTargets.Release.props" />
+    <Import Project="..\MSBuild\NSudoG.props" />
+    <Import Project="..\MSBuild\NSudoLib.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release - CUI|ARM'" Label="PropertySheets">
+    <Import Project="..\MSBuild\AllTargets.Common.props" />
+    <Import Project="..\MSBuild\AllTargets.Release.props" />
+    <Import Project="..\MSBuild\NSudoC.props" />
+    <Import Project="..\MSBuild\NSudoLib.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release - GUI|ARM'" Label="PropertySheets">
+    <Import Project="..\MSBuild\AllTargets.Common.props" />
+    <Import Project="..\MSBuild\AllTargets.Release.props" />
+    <Import Project="..\MSBuild\NSudoG.props" />
+    <Import Project="..\MSBuild\NSudoLib.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug - CUI|ARM'">
+    <Import Project="..\MSBuild\AllTargets.Common.props" />
+    <Import Project="..\MSBuild\AllTargets.Debug.props" />
+    <Import Project="..\MSBuild\NSudoC.props" />
+    <Import Project="..\MSBuild\NSudoLib.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug - CUI|ARM64'">
+    <Import Project="..\MSBuild\AllTargets.Common.props" />
+    <Import Project="..\MSBuild\AllTargets.Debug.props" />
+    <Import Project="..\MSBuild\NSudoC.props" />
+    <Import Project="..\MSBuild\NSudoLib.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug - CUI|x64'">
+    <Import Project="..\MSBuild\AllTargets.Common.props" />
+    <Import Project="..\MSBuild\AllTargets.Debug.props" />
+    <Import Project="..\MSBuild\NSudoC.props" />
+    <Import Project="..\MSBuild\NSudoLib.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug - CUI|Win32'">
+    <Import Project="..\MSBuild\AllTargets.Common.props" />
+    <Import Project="..\MSBuild\AllTargets.Debug.props" />
+    <Import Project="..\MSBuild\NSudoC.props" />
+    <Import Project="..\MSBuild\NSudoLib.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug - GUI|ARM'">
+    <Import Project="..\MSBuild\AllTargets.Common.props" />
+    <Import Project="..\MSBuild\AllTargets.Debug.props" />
+    <Import Project="..\MSBuild\NSudoG.props" />
+    <Import Project="..\MSBuild\NSudoLib.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug - GUI|ARM64'">
+    <Import Project="..\MSBuild\AllTargets.Common.props" />
+    <Import Project="..\MSBuild\AllTargets.Debug.props" />
+    <Import Project="..\MSBuild\NSudoG.props" />
+    <Import Project="..\MSBuild\NSudoLib.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug - GUI|Win32'">
+    <Import Project="..\MSBuild\AllTargets.Common.props" />
+    <Import Project="..\MSBuild\AllTargets.Debug.props" />
+    <Import Project="..\MSBuild\NSudoG.props" />
+    <Import Project="..\MSBuild\NSudoLib.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug - GUI|x64'">
+    <Import Project="..\MSBuild\AllTargets.Common.props" />
+    <Import Project="..\MSBuild\AllTargets.Debug.props" />
+    <Import Project="..\MSBuild\NSudoG.props" />
+    <Import Project="..\MSBuild\NSudoLib.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release - CUI|x64'">
+    <TargetName>TLauncher</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release - CUI|x64'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="M2WindowsHelpers.h" />
+    <ClInclude Include="NSudoVersion.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="M2WindowsHelpers.cpp" />
+    <ClCompile Include="NSudo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\Manifest.rc" />
+    <ResourceCompile Include="Resources\NSudo.rc" />
+    <ResourceCompile Include="Resources\Version.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="Resources\NSudoConsole.manifest" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\YY.NuGet.Import.Helper.1.0.0.2\build\native\YY.NuGet.Import.Helper.targets" Condition="Exists('..\packages\YY.NuGet.Import.Helper.1.0.0.2\build\native\YY.NuGet.Import.Helper.targets')" />
+  </ImportGroup>
+</Project>

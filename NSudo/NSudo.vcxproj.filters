@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{81593d0a-42a7-416c-973a-51197fe4964b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="M2WindowsHelpers">
+      <UniqueIdentifier>{a323b30b-30bf-4e37-a088-8fcb9ab27a39}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NSudoVersion.h" />
+    <ClInclude Include="M2WindowsHelpers.h">
+      <Filter>M2WindowsHelpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NSudo.cpp" />
+    <ClCompile Include="M2WindowsHelpers.cpp">
+      <Filter>M2WindowsHelpers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\Version.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Resources\NSudo.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Resources\Manifest.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="Resources\NSudoConsole.manifest">
+      <Filter>Resources</Filter>
+    </Manifest>
+  </ItemGroup>
+</Project>
